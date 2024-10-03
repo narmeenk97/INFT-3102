@@ -1,0 +1,18 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "Assignment 1 Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Narmeen Khalid",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "bootstrap": "^5.3.3",
+    "nunjucks": "^3.2.4"
+  }
+}

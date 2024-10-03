@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk 
+title: Project
+permalink: /projects/
+---
+
+<h1>Explore my Porjects here</h1>
+
+<ul>
+    {% for project in projects %}
+    <li>
+        <h2>{{ project.title }}<h2>
+            <p>{{ project.description }}</p>
+            <a href="{{ project.link }}">View Project</a>
+    </li>
+    {% endfor %}
+</ul>
