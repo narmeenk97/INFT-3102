@@ -1,0 +1,29 @@
+---
+title: "Bookstore"
+layout: layouts/base.njk
+permalink: /bookstore/
+---
+{# As discussed with the professor in class I made this a bookstore #}
+<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stlesheet" href="/src/_data/assets/style.css">
+<div class="banner text-center">
+    <h1 style="font-family: cursive; color: #211419;">♥ Narmeen's Bookstore ♥</h1>
+</div>
+{# Added bootstrap styling to display the cards for the books in the store #}
+<div class="row">
+    {% for book in collections.books %}
+      <div class="col-sm-6 col-md-4 d-flex mb-4">
+        <div class="card flex-fill">
+          <img src="{{ book.data.img }}" class="card-img-top" alt="{{ book.data.title }}" />
+          <div class="card-body">
+            <h5 class="card-title">{{ book.data.title }}</h5>
+            <p class="card-text"><strong>Author: </strong>{{ book.data.author }}</p>
+            <p class="card-text"><strong>Price: </strong>{{ book.data.price }}</p>
+            <p class="card-text">{{ book.data.description }}</p>
+            <button type="button" class="btn btn-success btn-lg btn-block">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

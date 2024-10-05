@@ -11,8 +11,10 @@
   "author": "Narmeen Khalid",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
     "bootstrap": "^5.3.3",
     "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
   }
 }

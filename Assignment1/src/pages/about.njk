@@ -3,4 +3,53 @@ layout: layouts/base.njk
 title: About Me
 permalink: /about/
 ---
-
+{# I added bootstrap templates to make my website look more aesthetically pleasing #}
+<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<div class="container mt-3">
+  <h1 class="text-center" style="font-family: cursive; color: #211419;">About Me</h1>
+</div>
+  <div class="container">
+    <div class="col-lg-6 px-0">
+      <p class="lead my-3" style="font-family: cursive; color: #211419;">Aspiring IT Graduate Seeking Hands-On Experience in the Field</p>
+    </div>
+  </div>
+  {# This is part of my cover letter #}
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1" style="font-family: cursive; color: #211419;">A little bit about me</h2>
+        <p class="lead" style="font-family: cursive; color: #211419;">I am originally from Pakistan but I immigrated to Canada in 2013 with my family.</p>
+        <p class="lead" style="font-family: cursive; color: #211419;">
+          I graduated in 2020 with a Bachelors in Psychology with Honours from York University. I 
+          am currently pursuing a Diploma in Computer Programming from Durham College and
+          have completed four out of the six semesters. This program has allowed me to hone my
+          skills in the different programming languages. My academic achievements, including being
+          on the Honour Roll for the first two semesters, reflect a strong determination to master
+          programming concepts and delivering high-quality work.
+        </p>
+        <p class="lead" style="font-family: cursive; color: #211419;">  
+          Apart from my technical skills, I think my practical experience working as a customer service
+          associate and a supervisor has allowed me to work well with teams. It has allowed me to
+          understand my weaknesses and strengths when it comes to working in teams. These positions
+          have allowed me to hone my problem-solving skills and have provided me with a strong
+          attention to detail, these qualities are essential for success in software development. 
+        </p>
+        <p class="lead" style="font-family: cursive; color: #211419;">
+          I am confident that the combination of technical skills, teamwork abilities, and dedication to
+          continuous learning make me a strong candidate for most Junior Developer positions available. 
+          I look forward to
+          working in a collaborative environment where I can apply my skills and grow as a
+          programmer.
+        </p>
+        <p class="lead" style="font-family: cursive; color: #211419;">
+          Please contact me here.
+        </p>
+        <a href="/contact/" class="btn btn-outline-primary" style="font-family: cursive; color: #211419;">Contact Me</a>
+      </div>
+      <div class="col-md-5">
+        <img src="/_data/pictures/IMG_1402.JPG" alt="Featurette Image" class="featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+  </div>
+</main>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
