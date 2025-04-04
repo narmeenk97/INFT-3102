@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+title: Projects
+permalink: /projects/
+---
+<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/src/_data/assets/style.css">
+<div class="banner text-center">
+    <h1 style="font-family: cursive; color: #211419;">♥ Projects ♥</h1>
+</div>
+{# used bootstrap styling on the table that displays the projects 
+   since I am using md files for the content and created a collection using that, adding projects and removing them should just include 
+   creating a new md file in the projects folder or simply deleting one #}
+<div class="container mt-5">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover table-striped align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for project in projects %}
+          <tr>
+            <td>{{ project.Title }}</td>
+            <td>{{ project.Description }}</td>
+            <td>
+              <a href="{{ project.data.Link }}" class="btn btn-primary" target="_blank">View Project</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

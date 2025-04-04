@@ -1,0 +1,173 @@
+{
+    "BooksDataFetchedFromStrapi": {
+      "data": [
+        {
+          "id": 2,
+          "documentId": "lfkpm2iyc5xt13ydwmyip2d7",
+          "Title": "1984",
+          "Author": "George Orwell",
+          "Price": 12.5,
+          "Description": "A dystopian novel about a totalitarian regime.",
+          "createdAt": "2024-11-23T04:02:25.131Z",
+          "updatedAt": "2024-11-23T04:02:25.131Z",
+          "publishedAt": "2024-11-23T04:02:25.152Z",
+          "Image": {}
+        },
+        {
+          "id": 6,
+          "documentId": "bld4nl9r5odp9n7avckqkml9",
+          "Title": "A Court of Mist and Fury",
+          "Author": "A Court of Mist and Fury",
+          "Price": 20,
+          "Description": "A Court of Mist and Fury follows Feyre as she navigates the aftermath of her trials Under the Mountain, forging new alliances and confronting her inner strength while entangled in the looming war between mortal and fae realms, and her growing bond with the enigmatic High Lord, Rhysand.",
+          "createdAt": "2024-11-23T04:04:20.051Z",
+          "updatedAt": "2024-11-23T04:04:21.168Z",
+          "publishedAt": "2024-11-23T04:04:21.186Z",
+          "Image": {}
+        },
+        {
+          "id": 8,
+          "documentId": "rph96hnyyjrwvf22plxojq7q",
+          "Title": "A Court of Silver Flames",
+          "Author": "Sarah J. Maas",
+          "Price": 20,
+          "Description": "A Court of Silver Flames centers on Nesta Archeron as she battles her inner demons and embraces her untapped power, while forging unexpected relationships and preparing for the looming dangers threatening the fae world.",
+          "createdAt": "2024-11-23T04:05:08.825Z",
+          "updatedAt": "2024-11-23T04:05:08.825Z",
+          "publishedAt": "2024-11-23T04:05:08.841Z",
+          "Image": {}
+        },
+        {
+          "id": 9,
+          "documentId": "z0x5fwacb17xpffbik7o2787",
+          "Title": "A Court of Frost and Starlight",
+          "Author": "Sarah J. Maas",
+          "Price": 20,
+          "Description": "A Court of Frost and Starlight is a novella that explores the aftermath of the war with Hybern, following Feyre, Rhysand, and their friends as they heal from the conflict and prepare for the Winter Solstice, reflecting on their newfound peace and the challenges that still lie ahead.",
+          "createdAt": "2024-11-23T04:03:23.556Z",
+          "updatedAt": "2024-11-23T04:05:32.498Z",
+          "publishedAt": "2024-11-23T04:05:32.519Z",
+          "Image": {}
+        },
+        {
+          "id": 11,
+          "documentId": "slryck26gsrgdmhee04rvp6u",
+          "Title": "A Court of Thorns and Roses",
+          "Author": "Sarah J. Maas",
+          "Price": 20,
+          "Description": "A fantasy novel about about a young huntress named Feyre who is taken to a magical fae realm after killing a wolf, where she uncovers dark secrets and embarks on a journey of love, danger, and self-discovery.",
+          "createdAt": "2024-11-23T04:06:21.409Z",
+          "updatedAt": "2024-11-23T04:06:22.153Z",
+          "publishedAt": "2024-11-23T04:06:22.164Z",
+          "Image": {}
+        },
+        {
+          "id": 13,
+          "documentId": "dfn5bo4a8p7y6qgwmxqp9tjd",
+          "Title": "A Court of Wings and Ruin",
+          "Author": "Sarah J. Maas",
+          "Price": 20,
+          "Description": "A Court of Wings and Ruin sees Feyre return to the Spring Court as a spy while preparing for the ultimate battle to save the fae and mortal realms from the impending war with Hybern, as she faces betrayal, loss, and the complexity of love and power.",
+          "createdAt": "2024-11-23T04:07:06.599Z",
+          "updatedAt": "2024-11-23T04:07:07.607Z",
+          "publishedAt": "2024-11-23T04:07:07.622Z",
+          "Image": {}
+        },
+        {
+          "id": 15,
+          "documentId": "zwwmqxd0ug97splaqcefiu9c",
+          "Title": "The Great Gatsby",
+          "Author": "F. Scott Fitzgerald",
+          "Price": 10.99,
+          "Description": "A classic novel set in the Jazz Age.",
+          "createdAt": "2024-11-23T04:07:46.957Z",
+          "updatedAt": "2024-11-23T04:07:47.846Z",
+          "publishedAt": "2024-11-23T04:07:47.873Z",
+          "Image": {}
+        },
+        {
+          "id": 17,
+          "documentId": "tq4g45hhn30g684oqfal5g4m",
+          "Title": "To Kill a Mockingbird",
+          "Author": "Harper Lee",
+          "Price": 8.99,
+          "Description": "A novel about racial injustice in the Deep South.",
+          "createdAt": "2024-11-23T04:08:36.180Z",
+          "updatedAt": "2024-11-23T04:08:36.180Z",
+          "publishedAt": "2024-11-23T04:08:36.190Z",
+          "Image": {}
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "page": 1,
+          "pageSize": 25,
+          "pageCount": 1,
+          "total": 8
+        }
+      }
+    },
+    "ProjectsDataFetchedFromStrapi": {
+      "data": [
+        {
+          "id": 2,
+          "documentId": "v1o9prtb5qldmwvasjpsjkkr",
+          "Title": "Project 1",
+          "Description": "Worked on a web development project in class, which was created using webpack-cli to bundle the application. The project used JavaScript, CSS, and other web assests such as bootstrap and babel.",
+          "Link": "http://linktoproject1.dev/project1",
+          "createdAt": "2024-11-23T04:09:34.775Z",
+          "updatedAt": "2024-11-23T04:09:34.775Z",
+          "publishedAt": "2024-11-23T04:09:34.784Z"
+        },
+        {
+          "id": 4,
+          "documentId": "kdevu4v4x299tfkbc18pv0xh",
+          "Title": "Project 2",
+          "Description": "Created a tic tac toe game in C# for a class",
+          "Link": "http://linktoproject2.dev/project2",
+          "createdAt": "2024-11-23T04:10:03.822Z",
+          "updatedAt": "2024-11-23T04:10:03.822Z",
+          "publishedAt": "2024-11-23T04:10:03.830Z"
+        },
+        {
+          "id": 6,
+          "documentId": "oytt8nb5q4qppss3jw8bgbb3",
+          "Title": "Project 3",
+          "Description": "created a card game called Hearts in C#",
+          "Link": "http://linktoproject3.dev/project3",
+          "createdAt": "2024-11-23T04:10:36.383Z",
+          "updatedAt": "2024-11-23T04:10:36.383Z",
+          "publishedAt": "2024-11-23T04:10:36.397Z"
+        },
+        {
+          "id": 8,
+          "documentId": "mr897x8c5ps8kiiomd3j45l3",
+          "Title": "Project 4",
+          "Description": "created a budget collecting website using razor pages.",
+          "Link": "http://linktoproject4.dev/project4",
+          "createdAt": "2024-11-23T04:11:10.991Z",
+          "updatedAt": "2024-11-23T04:11:10.991Z",
+          "publishedAt": "2024-11-23T04:11:11.001Z"
+        },
+        {
+          "id": 10,
+          "documentId": "dviki3aeje3gh5uvxqiq7bfc",
+          "Title": "Project 5",
+          "Description": "created a weather app using java.",
+          "Link": "http://linktoproject5.dev/project5",
+          "createdAt": "2024-11-23T04:11:38.023Z",
+          "updatedAt": "2024-11-23T04:11:38.023Z",
+          "publishedAt": "2024-11-23T04:11:38.033Z"
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "page": 1,
+          "pageSize": 25,
+          "pageCount": 1,
+          "total": 5
+        }
+      }
+    }
+  }
+  

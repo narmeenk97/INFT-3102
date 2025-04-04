@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/src/_data/assets/style.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Narmeen Khalid</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/about/" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="/projects/" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="/bookstore/" class="nav-link">BookStore</a></li>
+            <li class="nav-item"><a href="/contact/" class="nav-link">Contact Me</a></li>
+          </ul>
+        </header>
+      </div>
+      <main>
+        
+<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<div class="banner text-center">
+  <h1 style="font-family: cursive; color: #211419;">♥ HOME ♥</h1>
+</div>
+<div class="container mt-5">
+  <div class="row align-items-stretch" style="background: url(../_data/pictures/ocean.jpg); padding: 20px;">
+      <!-- Content and Buttons Section -->
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h1 class="display-5 text-body-emphasis text-center" style="font-family: cursive; color: #211419;">Welcome To My Website</h1>
+          <p class="lead text-center" style="font-family: cursive; color: #211419;">This website shows some of the projects that I have completed, showcasing my
+              experience. Navigate to the About Me page to learn more about me. You can click Projects to take you to a list of my past/current projects or select Bookstore
+              to see what we have in stock today. Thank you for visiting!
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-center">
+              <a href="/projects/" class="btn btn-light btn-lg px-4 gap-3">Projects</a>
+              <a href="/bookstore/" class="btn btn-light btn-lg px-4">View Bookstore</a>
+          </div>
+      </div>
+
+      <!-- Weather Section -->
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+          <div class="weather-section p-3 border rounded shadow-sm">
+              <h2 class="text-center">Daily Weather</h2>
+              <div id="weather-info" class="text-center">
+                  <p>Loading weather information...</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container mt-5">
+      <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div id="myCarousel" class="carousel slide">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="../_data/pictures/1.jpg" class="d-block w-100" alt="A picture of a bunny and a chick.">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Rabbit and Chick</h5>
+                          <p>Adorable!</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../_data/pictures/2.jpg" class="d-block w-100" alt="Money Plant.">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Kitten and Puppy friends</h5>
+                          <p>Donate Today!</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../_data/pictures/3.jpg" class="d-block w-100" alt="String of pearls plant.">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Noodle</h5>
+                          <p>He loves getting his white fur dirty.</p>
+                      </div>
+                  </div>
+              </div>
+              <button id="Previous" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button id="Next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div>
+  </div>
+</div>
+
+    </main>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  async function fetchWeather() {
+      try {
+          const response = await fetch('/.netlify/functions/fetch_weather');
+          const data = await response.json();
+
+          if (response.ok) {
+              document.getElementById('weather-info').innerHTML = `
+                  <h3>${data.city}</h3>
+                  <p><strong>Temperature:</strong> ${data.temperature}°C</p>
+                  <p><strong>Description:</strong> ${data.description}</p>
+                  <img src="https://openweathermap.org/img/wn/${data.icon}@2x.png" alt="Weather Icon">
+              `;
+          } else {
+              document.getElementById('weather-info').innerHTML = '<p>Failed to load weather data.</p>';
+          }
+      } catch (error) {
+          document.getElementById('weather-info').innerHTML = '<p>Error fetching weather data.</p>';
+      }
+  }
+
+  fetchWeather();
+</script>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Narmeen Khalid</span>
+          </div>
+        </footer>
+    </div>
+</body>
+</html>
